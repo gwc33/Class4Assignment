@@ -43,7 +43,9 @@ public class TriangleController extends HttpServlet {
         
         request.setAttribute("area", area);
         
-        RequestDispatcher view = request.getRequestDispatcher("/response.jsp");
+        //Commented out line that pointed to different response page
+        //RequestDispatcher view = request.getRequestDispatcher("/response.jsp");
+        RequestDispatcher view = request.getRequestDispatcher("/main.jsp");
         view.forward(request, response);
     }
 
