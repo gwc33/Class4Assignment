@@ -20,8 +20,11 @@ public class TriangleCalculator {
             double sideThreeSquared = doubleSideOne*doubleSideOne+doubleSideTwo*doubleSideTwo;
             double sideThree = Math.sqrt(sideThreeSquared);
             double semiperimeter = (doubleSideOne + doubleSideTwo + sideThree)/2;
+            /*      
             http://en.wikipedia.org/wiki/Heron%27s_formula
-            double area = base*height*.5;
+            calculates the area of the triangle 
+            */
+            double area = Math.sqrt(semiperimeter*(semiperimeter-doubleSideOne)*(semiperimeter-doubleSideTwo)*(semiperimeter-sideThree));
             return "" + area;
         } catch(NumberFormatException nfe) {
             return "Number was non-numeric";
