@@ -17,16 +17,6 @@
         <span class="leading">Area</span><span class="ending">CALCULATOR</span>
     </header>
     <body>
-        <%
-            //Object obj = request.getAttribute("area");
-            //if (obj == null) {
-            //    //out.println("Object was null");
-            //} else {
-            //    out.println("<h1>Area is:</h1>");
-            //    out.println(obj.toString());
-            //}
-        %>
-
         <h1 id="capsAttack">PICK YOUR CALCULATOR</h1>
         <div class="bigbox">
             <div class="boxes">
@@ -130,7 +120,7 @@
                 </svg>
             </div>
         </div>
-        <div class="bigbox">
+        <footer>
             <%
             Object obj = request.getAttribute("area");
             if (obj == null) {
@@ -140,7 +130,8 @@
                 //out.println("<h1>" + obj.toString() + "</h1>");
             }
         %>
-        </div>
+        
+        </footer>
 
     </body>
 </html>
